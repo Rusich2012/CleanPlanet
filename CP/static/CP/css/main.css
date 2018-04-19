@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  background: url('../images/gor.jpg') no-repeat;
+  background-size: 1920px 1080px;
+  background-color: rgb(22,38,53);
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  line-height: 1;
+	position: relative;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*___Шапка___*/
+
+.menu {
+	margin-left: 250px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.head-menu {
+	text-align: center;
+    line-height: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.head-menu li {
+	margin: 0 20px;
+	margin-bottom: 16px;
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 100%;
+    float: none;
+    width: auto;
+}
+
+.head-menu a {
+    padding: 10px 5px;
+    font-size: 1.1em;
+    color: white;
+}
+
+.head-menu a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+.head-profile {
+	float: right;
+	cursor: pointer;
+	vertical-align: middle;
+    line-height: 100%;
+    padding-bottom: 7px;
+}
+
+.head-profile:hover {
+    border-bottom: 3px solid #fff;
+}
+
+.head-profile p {
+    display: inline-block;
+    color: white;
+    font-size: 1.1em;
+    margin-right: 10px;
+    position: relative;
+    bottom: 20px;
+}
+
+.prof {
+	display: inline-block;
+	width: 54px;
+	height: 54px;
+	margin-top: 13px;
+	background-image: url("../images/profile.png");
+	background-size: cover;
+}
+
+/*___Контент___*/
+
+.container {
+	position: relative;
+	width: 70%;
+	margin: 0 auto;
+	top: 40px;
+	border-radius: 2px;
+}
+
+.map {
+	height: 640px;
+	background: url("../images/map.jpg") no-repeat;
+	background-size: cover;
+	border: 6px solid rgba(82,135,153,.8);
+	border-radius: 2px;
+}
+
+.map-search {
+	height: 120px;
+	margin-top: 30px;
+	background-color: rgba(82,135,153,.4);
+	text-align: center;
+	border-radius: 2px;
+}
+
+.map-search p {
+	padding: 15px 0;
+	font-size: 1.1em;
+	color: white;
+	border-radius: 2px;
+}
+
+.map-search input[type="text"] {
+    width: 60%;
+	height: 40px;
+	padding-left: 15px;
+	margin-right: 5px;
+	font-size: 1.4em;
+	border-radius: 2px;
+	border: none;
+}
+
+.map-search input[type="submit"] {
+	width: 10%;
+	height: 40px;
+	font-size: 1.4em;
+	border-radius: 2px;
+	color: white;
+	background-color: rgb(58,131,223);
+	border: none;
+	cursor: pointer;
+}
+
+.map-search input[type="submit"]:hover {
+	background-color: rgb(80,140,225);
+}
+
+.act {
+	position: relative;
+    height: 460px;
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.left-block {
+	position: absolute;
+	left: 60px;
+	top: 60px;
+	width: 45%;
+	height: 340px;
+	border-right: 2px solid #ccc;
+	text-align: center;
+}
+
+.act p {
+    font-size: 1.5em;
+    color: #333;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.act p:hover {
+	text-decoration: underline;
+}
+
+.right-block {
+	position: absolute;
+	right: 60px;
+	top: 60px;
+	width: 45%;
+	height: 340px;
+	text-align: center;
+}
+
+.organize {
+	margin: 0 auto;
+	width: 240px;
+	height: 240px;
+	background: url("../images/list1.png");
+	background-size: cover;
+	border-radius: 50%;
+    cursor: pointer;
+}
+
+.organize:hover {
+	box-shadow: 0 0 50px 25px #a6d5df;
+}
+
+.donate {
+	background: url("../images/donate2.png");
+	background-size: cover;
+}
+footer {
+	position: static;
+	width: 100%;
+	bottom: 0;
+	height: 70px;
+	background-color: rgba(82,135,153,.4);
+	text-align: center;
+	color: white;
+}
+
+footer p {
+	padding-top: 25px;
+	font-size: 1.1em;
+}
+
+/*___Профиль пользователя___*/
+
+.profile-block {
+	position: absolute;
+	top: 0;
+	left: 54px;
+	width: 24%;
+	height: 470px;
+	background-color: white;
+	border-radius: 2px;
+}
+
+.avatar {
+	width: 96%;
+	height: 400px;
+	margin: 5px auto;
+	background: url("../images/Tutchev.jpg") center no-repeat;
+	background-size: cover;
+}
+
+.Name {
+	height: 60px;
+	background-color: #70aab8;
+	text-align: center;	
+	border-bottom: 5px solid #fbaa2b;
+}
+
+.Name p {
+	padding-top: 18px;
+	font-size: 1.5em;
+	color: white;
+}
+
+.profile-info {
+	position: absolute;
+	top: 0;
+	right: 54px;
+	width: 65%;
+	background-color: white;
+	border-radius: 2px;
+}
+
+.info {
+	width: 70%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.info input[type="text"] {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	margin: 10px auto;
+	font-size: 1.5em;
+	padding: 8px 10px;
+}
+
+.info input[type="submit"] {
+	width: 42%;
+	height: 40px;
+	margin-top: 25px;
+	font-size: 1.4em;
+	border-radius: 2px;
+	color: white;
+	background-color: rgb(58,131,223);
+	border: none;
+	cursor: pointer;
+}

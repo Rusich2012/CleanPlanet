@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CP/css/landing.css' %}">
+    <link rel="stylesheet" href="{% static 'CP/css/main.css' %}">
+    {% block link %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header class="head-landing">
+    	<div class="head-cont">
+            <div class="head-emblem"><a href="/home/">Чистая планета</a></div>
+            <div class="menu">
+                <ul class="head-menu">
+                    <li>
+                        <a href="/home/">Домашняя</a>
+                    </li>
+                    <li>
+                        <a href="/all-events/">События</a>
+                    </li>
+                    <li>
+                        <a href="">Фонд</a>
+                    </li>
+                    <li>
+                        <a href="">О нас</a>
+                    </li>
+                </ul>
+                <div class="head-profile">
+                    <p>{{ user.username }}</p>
+                    <i class="prof"></i>
+                </div>
+            </div>
+    	</div>
+    </header>
+    <section class="container" style="{% block width-cont %}{% endblock %}">
+        {% block content %}
+
+        {% endblock %}
+    </section>
+    {% block footer %}
+
+    {% endblock %}
+</body>
+</html>

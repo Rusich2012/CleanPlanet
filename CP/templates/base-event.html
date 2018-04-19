@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block link %}<link rel="stylesheet" href="{% static 'CP/css/events.css' %}">{% endblock %}
+{% block title %}events{% endblock %}
+{% block width-cont %}position: relative; width: 70%;{% endblock %}
+
+{% block content %}
+    <div class="sort">
+        <h2>Искать по:</h2>
+        <input type="text" placeholder="Дате">
+        <input type="text" placeholder="Месту проведения">
+        <input type="text" placeholder="Организатору">
+        <input type="submit" value="Найти">
+    </div>
+    <div class="org">
+        <i class="org-icon"></i>
+        <a href="">Организовать событие</a>
+    </div>
+<div class="column">
+    {% block column %}
+
+    {% endblock %}
+</div>
+{% endblock %}
+{% block footer %}
+    <footer style="float: left; margin-top: 130px;">
+        <p>Copyright 2018</p>
+    </footer>
+{% endblock %}

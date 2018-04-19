@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load staticfiles %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'CP/css/landing.css' %}">
+	<title>Чистая планета</title>
+</head>
+<body>
+    <header class="head-landing pos">
+    	<div class="head-cont">
+            <div class="head-buttons">
+            	<a href="" class="head-btn">Зарегистрироваться</a>
+            	<a href="" class="head-btn">Войти</a>
+            </div>
+            <div class="head-emblem"><a href="">Чистая планета</a></div>
+    	</div>
+    </header>
+
+    <div id="fullpage">
+        <section class="section scroll-1" data-anchor="firstPage">
+            <div class="description">
+                <h1>Наша планета - наш дом!</h1>
+                <p>Чистая планета - это удобный сервис, позволяющий вам принять активное участие в сохранении природы. Главным инструментом 
+                 сервиса является интерактивная карта, на которой вы можете отметить скопление мусора и в дальнейшем организовать его уборку. Присоединяйтесь! Очистим планету вместе!
+                 </p>
+            </div>
+            <div class="reg-form">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="1"><a href="/">Регистрация</a></label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" title="2">Вход</label>
+            	<form id="signup" action="/" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+            		<script>
+                        id_username.placeholder = "Введите имя";
+                        id_password1.placeholder = "Введите пароль";
+                        id_password2.placeholder = "Повторите пароль";
+                    </script>
+            		<input type="submit" value="Зарегистрироваться">
+            	</form>
+                <form id="signin" action="/signin/" method="post">
+                    {% csrf_token %}
+                    {% if login_error %}
+                    <p class = "error">{{ login_error }}</p>
+                    <script>
+                        tab2.checked = true;
+                    </script>
+                    {% endif %}
+                    <input type="text" name="username" placeholder="Введите имя">
+                    <input type="password" name="password" placeholder="Введите пароль">
+                    <input type="submit" value="Войти">
+                </form>
+            </div>
+        </section>
+     
+        <section class="section scroll-2" data-anchor="secondPage">
+                <p>Второй экран</p>
+        </section>
+     
+        <section class="section scroll-3" data-anchor="thirdPage">
+                <p>Третий экран</p>
+        </section>
+    </div>
+    <div class="scroll-helper">
+    	<i class="arrow"></i>
+    	<p>Как это работает</p>
+    </div>
+    <script src="{% static 'CP/scripts/jquery-3.2.1.js' %}"></script>
+    <script src="{% static 'CP/scripts/jquery.easings.min.js' %}s"></script>
+    <script src="{% static 'CP/scripts/scrolloverflow.min.js' %}"></script>
+    <script src="{% static 'CP/scripts/jquery.fullpage.min.js' %}"></script>
+    <script>
+    $(document).ready(function() {
+	    $('#fullpage').fullpage({
+		    anchors:['firstPage', 'secondPage', 'thirdPage']
+	    });
+    });
+    </script>
+</body>
+</html>
