@@ -25,5 +25,6 @@ urlpatterns = [
     url(r'^prev-events/', TemplateView.as_view(template_name='prev-events.html')),
     url(r'^next-events/', TemplateView.as_view(template_name='next-events.html')),
     url(r'^one-event/', TemplateView.as_view(template_name='one-event.html')),
+    url(r'^organize/', TemplateView.as_view(template_name='organize.html')),
     url(r'^admin/', admin.site.urls),
 ]

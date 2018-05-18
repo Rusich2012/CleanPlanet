@@ -64,6 +64,7 @@ a {
     line-height: 80px;
     position: relative;
     text-align: center;
+	font-weight: 600;
 }
 
 .head-menu {
@@ -78,7 +79,7 @@ a {
 
 .head-menu li {
 	margin: 0 20px;
-	margin-bottom: 16px;
+	margin-bottom: 14px;
 	display: inline-block;
     vertical-align: middle;
     line-height: 100%;
@@ -94,6 +95,15 @@ a {
 
 .head-menu a:hover {
     border-bottom: 3px solid #fff;
+}
+
+.signout {
+	background-color: lightcoral;
+	padding: 10px 20px !important;
+}
+
+.signout:hover {
+	background-color: #F48C8C;
 }
 
 .head-profile {
@@ -138,8 +148,6 @@ a {
 
 .map {
 	height: 640px;
-	background: url("../images/map.jpg") no-repeat;
-	background-size: cover;
 	border: 6px solid rgba(82,135,153,.8);
 	border-radius: 2px;
 }

@@ -176,7 +176,7 @@ article p {
 }
 
 .one-block {
-	margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .one-block article {
@@ -233,4 +233,114 @@ article p {
 	left: 32%;
 	background: url("../images/arrow2.png") no-repeat;
 	background-size: cover;
+}
+
+/*__ one-event__*/
+
+.add-comment {
+    width: 65%;
+	min-height: 300px;
+	background-color: white;
+	margin: 40px auto;
+	padding: 40px 50px;
+}
+
+.add-comment h2 {
+	color: #333;
+	font-size: 1.5em;
+	font-weight: 600;
+	padding-bottom: 40px;
+}
+
+.add-comment p {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: rgba( 34, 49, 63, 0.7);
+}
+
+.add-comment textarea {
+	margin-top: 20px;
+    width: 100%;
+	min-height: 150px;
+}
+
+.send {
+	background-color: #4DB063;
+	color: white;
+	font-size: 1.1em;
+	font-weight: 600;
+	width: 40%;
+	min-height: 40px;
+	margin: 20px auto;
+	padding: 15px 20px;
+	border: none;
+}
+
+.send:hover {
+	cursor: pointer;
+	background-color: rgba( 34, 49, 63, 0.7);
+}
+
+.comment {
+	width: 65%;
+	min-height: 150px;
+	background-color: white;
+	margin: 45px auto;
+	padding: 40px 50px;
+}
+
+.small-avatar {
+	display: inline-block;
+	height: 45px;
+	width: 54px;
+	background: url("../images/prof.png");
+	background-size: cover;
+}
+
+.comment span {
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: 600;
+	color: #F5917F;
+}
+
+.comment-date {
+	float: right;
+	font-style: italic;
+	color: #333;
+}
+
+.comment p {
+	margin-top: 20px;
+}
+
+/*___organize___*/
+
+.one-block input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1.2em;
+    width: 40%;
+    padding: 5px 10px;
+}
+
+.one-block input[type="date"],input[type="time"] {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1.2em;
+    width: 20%;
+    padding: 5px 10px;
+}
+
+.date_and_time {
+    padding-left: 30px;
+    color: #777;
+    font-size: 1.2em;
+}
+
+.one-block textarea {
+    margin-top: 15px;
+    width: 98%;
+    height: 80px;
+    padding: 10px 10px;
 }

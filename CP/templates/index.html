@@ -2,7 +2,9 @@
 {% extends "base.html" %}
 {% block title %}Home{% endblock %}
 {% block content %}
-        <div class="map"></div>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d76594.23611375924!2d39.22895240712274!3d51.65045359327686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1526585106605"
+                                 width="1276" height="640" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         <div class="map-search">
             <p>Поиск по карте</p>
             <div class="search-form">
@@ -11,14 +13,16 @@
             </div>
         </div>
         <div class="act">
-            <div class="left-block">
-                    <div class="organize"></div>
-                    <p>Организовать событие</p>
-            </div>
-            <div class="right-block">
-                    <div class="organize donate"></div>
-                    <p>Помочь проекту</p>
-            </div>
+            <a href="/organize/">
+                <div class="left-block">
+                        <div class="organize"></div>
+                        <p>Организовать событие</p>
+                </div>
+            </a>
+                <div class="right-block">
+                        <div class="organize donate"></div>
+                        <p>Помочь проекту</p>
+                </div>
         </div>
 {% endblock %}
 {% block footer %}

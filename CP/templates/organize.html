@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'CP/css/events.css' %}">
+{% endblock %}
+{% block title %}organize{% endblock %}
+
+{% block content %}
+    <div class="one-block" style="width: 80%; margin: 0 auto;">
+            <article style="padding-bottom: 20px;">
+                <form action="" method="post">
+                    <h2 style="text-align: center;">Укажите информацию о предстоящем событии</h2>
+                    <ul>
+                        <li>Организатор: <span style="font-weight: 600; color: #0e88b8;">{{ user.username }}</span></li>
+                        <li><input type="text" placeholder="Введите название"></li>
+                        <li><input type="date"><span class="date_and_time">Укажите дату</span></li>
+                        <li><input type="time"><span class="date_and_time">Укажите время</span></li>
+                        <li><input type="text" placeholder="Место проведения"></li>
+                        <li><textarea>Кратко опишите предстоящее событие</textarea></li>
+                        <li style="text-align: center;"><input class="send" type="submit" value="Организовать"></li>
+                    </ul>
+                </form>
+            </article>
+    </div>
+{% endblock %}

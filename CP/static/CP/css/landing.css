@@ -294,8 +294,8 @@ a {
 /*___Стрелка вниз___*/
 
 .scroll-helper {
-	z-index: 999;
-	display: block;
+  z-index: 999;
+  display: block;
   position: fixed;
   bottom: 20px;
   left: 45%;
@@ -309,7 +309,54 @@ a {
   position: absolute;
   width: 64px;
   height: 32px;
-    background: url('../images/arrow2.png') no-repeat;
-	bottom: 30px;
-	left: 65px;
+  background: url('../images/arrow2.png') no-repeat;
+  bottom: 30px;
+  left: 65px;
+}
+
+/*___scroll-2___*/
+
+.how_map {
+    top: 118% !important;
+    left: 13% !important;
+    max-width: 440px;
+}
+
+.img_map {
+    position: absolute;
+    top: 135%;
+    right: 10%;
+    width: 44%;
+    height: 460px;
+    background: url('../images/gmap.png') no-repeat;
+    background-size: cover;
+    border: 6px solid rgba(82,135,153,.8);
+}
+
+.arrow_to {
+    position: absolute;
+    top: 145%;
+    left: 23%;
+    width: 24%;
+    height: 160px;
+    background: url('../images/to.png') no-repeat;
+    background-size: cover;
+}
+
+/*___scroll-3___*/
+
+.how_event {
+    top: 218% !important;
+    left: 10% !important;
+    max-width: 500px;
+}
+
+.img_organize {
+    position: absolute;
+    top: 218%;
+    right: 10%;
+    width: 46%;
+    height: 480px;
+    background: url('../images/organize.png') no-repeat;
+    background-size: cover;
 }
