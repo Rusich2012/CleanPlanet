@@ -23,16 +23,16 @@
                         <a href="/all-events/">События</a>
                     </li>
                     <li>
-                        <a href="">Фонд</a>
+                        <a href="/donate/">Фонд</a>
                     </li>
                     <li>
                         <a class="signout" href="{% url 'signout' %}">Выйти</a>
                     </li>
                 </ul>
-                <div class="head-profile">
-                    <p>{{ user.username }}</p>
-                    <i class="prof"></i>
-                </div>
+                <a href="/profile/" class="head-profile">
+                        <p>{{ user.username }}</p>
+                        <i class="prof"></i>
+                </a>
             </div>
     	</div>
     </header>

@@ -133,7 +133,7 @@ article p {
 .sort input[type="submit"] {
 	background-color: #0e88b8;
 	color: white;
-	border-radius: 2px;
+	border-radius: 3px;
 	margin-bottom: 30px;
 }
 
@@ -162,7 +162,7 @@ article p {
 	font-size: 1.4em;
 	font-weight: 600;
 	background-color: #4DB063;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .org a:hover {
@@ -182,7 +182,7 @@ article p {
 .one-block article {
 	min-height: 260px;
 	background: white;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 .one-block>article h2 {
@@ -274,6 +274,7 @@ article p {
 	margin: 20px auto;
 	padding: 15px 20px;
 	border: none;
+    border-radius: 3px;
 }
 
 .send:hover {
@@ -343,4 +344,27 @@ article p {
     width: 98%;
     height: 80px;
     padding: 10px 10px;
+}
+
+/*__profile__*/
+
+.one-block input[type="file"] {
+    display: none;
+}
+
+.one-block label {
+    position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+    overflow: hidden; /* Все что выходит за пределы - скрываем */
+    width: 20%; /* Задаем ширину кнопки выбора файла */
+    height: 20px; /* Задаем высоту кнопки выбора файла */
+    background: #109ed5;
+    border-radius: 3px;
+    padding: 10px 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.one-block label:hover {
+    cursor: pointer;
+    background: #5897fb;
 }

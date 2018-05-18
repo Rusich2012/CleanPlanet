@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'CP/css/events.css' %}">
+{% endblock %}
+{% block title %}help{% endblock %}
+
+{% block content %}
+    <div class="one-block" style="width: 80%; margin: 0 auto;">
+            <article style="padding-bottom: 20px;">
+                <form action="" method="post">
+                    <h2 style="text-align: center;">Сделайте пожертвование, чтобы поддержать работу Clean Planet!</h2>
+                    <ul style="text-align: center">
+                        <li style="font-size: 1.2em;">Доброволец: <span style="font-weight: 600; color: #0e88b8;">{{ user.username }}</span></li><br>
+                        <li><input type="text" placeholder="Сумма перевода (руб)"></li><br>
+                        <li><input type="text" placeholder="Комментарий"></li><br>
+                        <li><input class="send" type="submit" value="Сделать пожертвование"></li><br>
+                    </ul>
+                </form>
+            </article>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer style="float: left; margin-top: 420px;">
+        <p>Copyright 2018</p>
+    </footer>
+{% endblock %}

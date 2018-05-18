@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'CP/css/events.css' %}">
+{% endblock %}
+{% block title %}profile{% endblock %}
+
+{% block content %}
+    <div class="one-block" style="width: 80%; margin: 0 auto;">
+            <article style="padding-bottom: 20px;">
+                <form action="">
+                    <h2 style="text-align: center;">Укажите информацию о себе</h2>
+                    <ul style="text-align: center">
+                        <li><input type="text" placeholder="Логин: {{ user.username }}"></li>
+                        <li><input type="text" placeholder="E-mail: Anatoliy@gmail.com"></li>
+                        <li><input type="text" placeholder="Ф.И.О:"></li>
+                        <li><input type="date"><span class="date_and_time">День рождения</span></li>
+                        <li><input type="text" placeholder="Страна:"></li>
+                        <li><input type="text" placeholder="Город:"></li><br>
+                        <li><input type="text" placeholder="Аватар вашего профиля:"></li>
+                        <li><label><input type="file" name="image"><span>Выберите файл</span></label></li><br>
+                        <li style="text-align: center;"><input onclick="alert('Изменения сохранены')" class="send" type="submit" value="Сохранить изменения"></li>
+                    </ul>
+                </form>
+            </article>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer style="float: left; margin-top: 180px;">
+        <p>Copyright 2018</p>
+    </footer>
+{% endblock %}
